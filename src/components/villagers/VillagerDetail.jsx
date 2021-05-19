@@ -4,7 +4,7 @@ import style from '../app/App.css'
 
 function VillagerDetail({ villager }) {
     return (
-        <main role="villagerDetails" className={style.detail} aria-label="villager">
+        <main role="villagerDetails" className={style.detail} data-testid="villager">
             <h1>{villager.name}</h1>
             <img src={villager.image} alt={villager.name} />
             <ul>
