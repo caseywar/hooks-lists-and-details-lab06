@@ -1,0 +1,28 @@
+body {
+    background-color: rgba(51, 238, 14, 0.488);
+}
+
+img {
+    width: 60px;
+}
+
+.list {
+    list-style: none;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.character {
+    background-color: rgb(58, 204, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    width: 40vh;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 10px dotted rgb(255, 7, 234);
+}
