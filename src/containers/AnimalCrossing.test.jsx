@@ -26,8 +26,11 @@ describe('Animal Crossing container', () => {
         screen.getByText('Loading...');
     });
 
-    it.skip('desiplays a list of villagers', async () => {
-        render(<AnimalCrossing />);
+    it('desiplays a list of villagers', async () => {
+        render(
+            <MemoryRouter>
+            <AnimalCrossing />
+            </MemoryRouter>);
 
         const ul = await screen.findAllByRole('list', { name: 'villagers' });
         expect(ul).toMatchSnapshot();
