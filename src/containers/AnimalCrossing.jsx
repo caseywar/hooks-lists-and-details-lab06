@@ -4,12 +4,12 @@ import { fetchVillagers } from '../services/AnimalCrossingApi'
 
 const AnimalCrossing = () => {
     const [loading, setLoading] = useState(true);
-    const [villagers, setCillagers] = useState([]);
+    const [villagers, setVillagers] = useState([]);
 
     useEffect(() => {
         fetchVillagers()
 
-        .then(setCillagers)
+        .then(setVillagers)
         .finally(() => setLoading(false));
     }, []);
 

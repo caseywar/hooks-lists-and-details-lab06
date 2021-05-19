@@ -13,3 +13,10 @@ export const fetchVillagers = async () => {
         skill: villager.skill
     }))
 }
+
+export const findVillagerById = async (id) => {
+    const res = await fetch(`https://ac-vill.herokuapp.com/villagers/${id}`);
+
+    const villager = await res.json();
+    return villager;
+};

@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Villager from './Villager';
-import style from '../app/App.css'
+import style from '../app/App.css';
+import { Link } from 'react-router-dom';
+
 
 const VillagerList = ({ villagers }) => (
     <ul aria-label="villagers" className={style.list}>
         {villagers.map((villager) => (
+            <Link to={`/villagers/${villager.id}`} key={villager.id}>
             <li key={villager.id} className={style.character}>
                 <Villager
                     name={villager.name}
@@ -13,6 +16,7 @@ const VillagerList = ({ villagers }) => (
                     japaneseName={villager.japaneseName}
                 />
             </li>
+            </Link>
         ))}
     </ul>
 )
