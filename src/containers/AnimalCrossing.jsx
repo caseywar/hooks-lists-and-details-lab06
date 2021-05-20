@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import VillagerList from '../components/villagers/VillagerList'
-import { fetchVillagers } from '../services/AnimalCrossingApi'
+// import React, { useState, useEffect } from 'react';
+// import VillagerList from '../components/villagers/VillagerList'
+// import { fetchVillagers } from '../services/AnimalCrossingApi'
 
-const AnimalCrossing = () => {
-    const [loading, setLoading] = useState(true);
-    const [villagers, setVillagers] = useState([]);
+// const AnimalCrossing = () => {
+//     const [loading, setLoading] = useState(true);
+//     const [villagers, setVillagers] = useState([]);
 
-    useEffect(() => {
-        fetchVillagers()
+//     useEffect(() => {
+//         fetchVillagers()
 
-        .then(setVillagers)
-        .finally(() => setLoading(false));
-    }, []);
+//         .then(setVillagers)
+//         .finally(() => setLoading(false));
+//     }, []);
 
-    if (loading) return <h1>Loading...</h1>;
+//     if (loading) return <h1>Loading...</h1>;
 
-    return (
-        <VillagerList villagers={villagers} />
-    );
-};
+//     return (
+//         <VillagerList villagers={villagers} />
+//     );
+// };
 
-export default AnimalCrossing;
+// export default AnimalCrossing;

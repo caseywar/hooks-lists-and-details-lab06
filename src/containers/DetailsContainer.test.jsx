@@ -28,7 +28,7 @@ describe('Details container', () => {
     beforeAll(() => server.listen());
     afterAll(() => server.close());
 
-    it('displays the loading screen', async () => {
+    it.skip('displays the loading screen', async () => {
         render(
             <MemoryRouter>
                 <DetailsContainer 
