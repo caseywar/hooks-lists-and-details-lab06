@@ -9,18 +9,7 @@ import { MemoryRouter } from 'react-router';
 
 const server = setupServer(
     rest.get('https://ac-vill.herokuapp.com/villagers/5f5fb4bbbfd05c2aed82e460', (req, res, ctx) => {
-    return res(ctx.json(mockVillagerData
-    //     {
-    //     id: '5f5fb4bbbfd05c2aed82e460',
-    //     name: 'Admiral',
-    //     image: 'https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/Admiral_NH.png/revision/latest?cb=20200802081138',
-    //     japaneseName: "イッテツ Ittetsu",
-    //     birthday: "January 27th (Aquarius)",
-    //     personality: 'cranky',
-    //     quote: 'Only quitters give up.',
-    //     skill: 'Writing about pickles',
-    // }
-    ));
+    return res(ctx.json(mockVillagerData));
     })
 );
 
