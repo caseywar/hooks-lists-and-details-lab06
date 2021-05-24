@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Animal Crossing container desiplays a list of villagers 1`] = `
+Array [
+  <ul
+    aria-label="villagers"
+    class="list"
+  />,
+]
+`;
